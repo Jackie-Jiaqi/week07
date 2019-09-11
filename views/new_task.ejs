@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <a href="/">home</a>
+    <form action="/new_task" method="POST">
+        <label for="taskName">taskName</label>
+        <input type="text" name="taskName" id="taskName" placeholder="taskName">
+        <label for="dueDate">dueDate</label>
+        <input type="date" name="dueDate" id="dueDate" placeholder="dueDate">
+        <label for="status">status</label>
+        <select name="status" id="status">
+            <option value="Complete">Complete</option>
+            <option value="InProgress">InProgress</option>
+        </select>
+        <label for="description">description</label>
+        <input type="text" name="description" id="description" placeholder="description">
+        <label for="assign">assign</label>
+        <select name="assign" id="assign">
+                <% for(var i =0;i< db.length;i++){ %>
+            <option value='<%= db[i]._id %>'><%= db[i].name.firstName %></option>
+            <% } %>
+        </select>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

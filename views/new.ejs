@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="/">home</a>
+    <a href="/list">List all developers</a>
+    <form action="/create" method="POST">
+        <div>
+            <label for="firstName">first name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="enter first name">
+        </div>
+        <div>
+            <label for="lastName">last name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="enter last name">
+        </div>
+        <select name="level">
+            <option value="beginner">beginner</option>
+            <option value="expert">expert</option>
+          </select>
+        <div>
+            <label for="state">state:</label>
+            <input type="text" name="state" id="state" placeholder="enter state">
+        </div>
+        <div>
+            <label for="suburb">suburb:</label>
+            <input type="text" name="suburb" id="suburb" placeholder="enter suburb">
+        </div>
+        <div>
+            <label for="street">street:</label>
+            <input type="text" name="street" id="street" placeholder="enter street">
+        </div>
+        <div>
+            <label for="unit">unit:</label>
+            <input type="text" name="unit" id="unit" placeholder="enter unit">
+        </div>
+        <div>
+           <input type="submit" value="SUBMIT">
+        </div>
+
+    </form>
+</body>
+
+</html>
